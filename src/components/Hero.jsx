@@ -1,27 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // 1. Import Link
+import { Link } from 'react-router-dom'; // 1. Import Link (necessary for internal links)
 
 const Hero = () => {
   return (
-    // 2. Use standard HTML tags like <section> and <div>
-    <section > 
-      <div >
-        <p > {/* Use <p> for text */}
+    <hero>
+      <left>
+        {/* 2. Changed <text> to <p> because <text> is not a valid HTML tag */}
+        <p>
           Crafting timeless treasures, preserving Chunar’s heritage in every piece.
         </p>
 
-        {/* 3. Use <Link> for internal navigation */}
+        {/* 3. Changed <a> tag to <Link> to fix the broken navigation */}
         <Link to="/shop">
-          <button>Load More</button>
+          <button> Load More</button>
         </Link>
-      </div>
+      </left>
 
-      <div c>
-        {/* 4. Add the leading slash '/' to the image path */}
+      <right>
+        {/* 4. Added the leading slash '/' to the image path to fix the image */}
         <img src='/images/hero.png' alt="Hero pottery" />
-      </div>
-    </section>
+      </right>
+    </hero>
   );
 }
 
-export default Hero;  
+export default Hero;
