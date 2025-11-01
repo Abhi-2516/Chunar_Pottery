@@ -11,7 +11,7 @@ const Shop = () => {
       currency: "INR",
       name: "Pottery.com",
       description: `Purchase ${productName}`,
-      image: "https://example.com/logo.png", // Replace with your logo URL
+      image: "/images/logo.png", // Replace with your logo URL
       handler: function (response) {
         // Payment successful
         console.log("Payment Success:", response);
@@ -40,13 +40,13 @@ const Shop = () => {
     rzp.open();
   };
 
-  const products = [
-    { id: 1, name: "Golden Brown Vase", price: 2900, image: "src/components/Card-2.png" },
-    { id: 2, name: "Ceramic Tea Pot", price: 2000, image: "src/components/Card-3.png" },
-    { id: 3, name: "Plant Pot", price: 1000, image: "src/components/Card-4.png" },
-    { id: 4, name: "Earthen Water Pot", price: 500, image: "src/components/Card-5.png" },
-    { id: 5, name: "Flower Pot", price: 500, image: "src/components/Card-6.png" },
-    { id: 6, name: "Copper Cup", price: 701, image: "src/components/Card-7.png" },
+const products = [
+    { id: 1, name: "Golden Brown Vase", price: 2900, image: "/images/Card-2.png" },
+    { id: 2, name: "Ceramic Tea Pot", price: 2000, image: "/images/Card-3.png" },
+    { id: 3, name: "Plant Pot", price: 1000, image: "/images/card-4.png" },
+    { id: 4, name: "Earthen Water Pot", price: 500, image: "/images/card-5.png" },
+    { id: 5, name: "Flower Pot", price: 500, image: "/images/card-6.png" },
+    { id: 6, name: "Copper Cup", price: 701, image: "/images/card-7.png" },
   ];
 
   const filteredProducts = products.filter((product) =>
@@ -65,7 +65,7 @@ const Shop = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <img src="src/components/search.png" alt="Search Icon" className="search-icon" />
+          <img src="/images/search.png" alt="Search Icon" className="search-icon" />
         </div>
       </div>
       <div className="product-list">

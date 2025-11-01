@@ -43,16 +43,16 @@ const About = () => {
       </div>
       <div className="founders">
         <div className="founder">
-          <img src="src\components\abhishek.png" alt="Abhishek" className="founder-image" />
+          <img src="/images/abhishek.png" alt="Abhishek" className="founder-image" />
           <h3>Abhishek - Co Founder</h3>
         </div>
         <div className="founder">
-          <img src="src\components\utkarsh.png" alt="Utkarsh" className="founder-image" />
+          <img src="/images/utkarsh.png" alt="Utkarsh" className="founder-image" />
           <h3>Utkarsh - Co Founder</h3>
         </div>
       </div>
       <div className="legacy-section">
-        <img src="src\components\Chunar.jpg" alt="Pottery Background" className="legacy-image" />
+        <img src="/images/Chunar.jpg" alt="Pottery Background" className="legacy-image" />
         <div className="legacy-text">
           <h2>rewriting the legacy of chunar...</h2>
         </div>

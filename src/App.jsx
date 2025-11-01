@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/navbar';
 import Hero from './components/Hero';
 import Featured from './components/featured';
-import Shop from './components/shop';
+import Shop from './components/Shop';
 import About from './components/about';
 import Contact from './components/Contact';
 import Sample from './components/sample';

@@ -77,7 +77,7 @@ const Login = () => {
       {errorMessage && <p className="error-message">{errorMessage}</p>}
 
       <div className="login-form-container">
-      <img src="src\components\login-im.gif" >
+      <img src="/images/login-im.gif" >
 
       </img>
         <form onSubmit={handleEmailSignIn} className="email-form">

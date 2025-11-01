@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './footer.css';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
           </address>
         </div>
         <div className="footer-right">
-          <img src="src\components\footer.png" alt="ODOP Logo" className="footer-logo" />
+          <img src="/images/footer.png" alt="ODOP Logo" className="footer-logo" />
         
         </div>
       </div>
