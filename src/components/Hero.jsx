@@ -8,7 +8,7 @@ const Hero = () => {
     </text>
    <a href='./Shop.jsx'> <button> Load More</button></a>
     </left>
-    <right> <img src='images\hero.png'></img> </right>
+    <right> <img src='images/hero.png'></img> </right>
        
         
    </hero>
