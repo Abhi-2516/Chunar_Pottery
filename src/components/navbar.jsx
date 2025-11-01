@@ -1,25 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div>
             <nav>
-            <span><a href='/'><li><img src='/images/logo.png'></img></li></a></span>
-               
+                {/* 1. Use <Link> for the logo to go home */}
+                {/* 2. Put <img> directly inside */}
+                <Link to='/'>
+                    <img src='/images/logo.png' alt="Logo" />
+                </Link>
+                
                 <ul>
-                    
-                    <Link to  ='/shop'><li>Shop</li></Link>
-                    <Link to ='/about'><li>About-Us</li></Link>
-                    <Link to ='/contact'><li>Contact</li></Link>
-                    <Link to ='/login'><li>Login/Register</li></Link>
-                    <Link to ='/cart'><li>Cart</li></Link>
+                    {/* 3. Put <li> *inside* the <Link> */}
+                    <li><Link to='/shop'>Shop</Link></li>
+                    <li><Link to='/about'>About-Us</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
+                    <li><Link to='/login'>Login/Register</Link></li>
+                    <li><Link to='/cart'>Cart</Link></li>
                 </ul>
-
             </nav>
         </div>
-    )
-
+    );
 }
 
-export default Navbar
+export default Navbar;
